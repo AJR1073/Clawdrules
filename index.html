@@ -3,16 +3,19 @@
 <head>
   <title>AgriSolar LLC | Optimize Your Solar Investment</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header { background-color: #2d2d2d; color: white; text-align: center; padding: 20px 0; }
-    h1, h2, p { margin: 20px; }
-    h1 { font-size: 2.5em; }
-    h2 { font-size: 1.8em; color: #333; }
-    .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
-    .cta { background-color: #4CAF50; color: white; padding: 15px 20px; text-align: center; text-decoration: none; display: block; margin: 10px auto; width: fit-content; border-radius: 5px; }
-    footer { background-color: #f0f0f0; text-align: center; padding: 15px 0; font-size: 0.9em; }
-    img { width: 80%; max-width: 500px; display: block; margin: 20px auto; }
+    body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+    header { background-color: #34495e; color: #ecf0f1; text-align: center; padding: 40px 0; }
+    h1 { font-size: 2.5em; margin: 0; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 20px; display: grid; gap: 20px; grid-template-columns: 1fr 1fr; }
+    .cta { background-color: #3498db; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; margin: 20px 0; border-radius: 5px; transition: background-color 0.3s ease; }
+    .cta:hover { background-color: #2980b9; }
+    footer { background-color: #ecf0f1; text-align: center; padding: 20px 0; font-size: 0.9em; }
+    img { width: 100%; height: auto; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); transition: transform 0.3s ease; }
+    img:hover { transform: scale(1.05); }
+    .full-width { grid-column: 1 / -1; }
+    @media (max-width: 768px) { .container { grid-template-columns: 1fr; } }
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -21,30 +24,28 @@
   </header>
 
   <div class="container">
-    <h2>Our Services</h2>
-    <p>With over a decade of experience, AgriSolar LLC specializes in optimizing solar arrays with top-tier agrivoltaic techniques. Let us help you enhance efficiency and minimize costs with our expert vegetation management services tailored to the needs of solar farms.</p>
-    <a href="#contact" class="cta">Request a Quote Now!</a>
+    <div class="full-width">
+      <h2>Our Services</h2>
+      <p>With over a decade of experience, AgriSolar LLC specializes in optimizing solar arrays with top-tier agrivoltaic techniques. Let us help you enhance efficiency and minimize costs with our expert vegetation management services.</p>
+      <a href="#contact" class="cta">Request a Quote Now!</a>
+    </div>
     <img src="https://agrisolarllc.com/gallery/zeroturnSolarPanel.jpg" alt="AgriSolar Mowing">
     <img src="https://images.squarespace-cdn.com/content/v1/680591fd0179787b525c24e4/82a01040-23ef-4935-9e60-46524b076649/Illinois+Solar+Grazing+F.jpg" alt="Illinois Solar Grazing">
-
-    <h2>Introducing Autonomous Mowers</h2>
-    <p>Our state-of-the-art autonomous mowers ensure precision and efficiency, reducing labor costs and enhancing safety. Discover how our technology seamlessly integrates with your solar farm to maximize productivity.</p>
-    <a href="#contact" class="cta">Learn More About Our Mowers</a>
-
-    <h2>Why Choose Us?</h2>
-    <p>Effective solar vegetation management is crucial for the sustainability and success of your farm. Our team is committed to delivering the highest standards of control and care, ensuring your investment thrives.</p>
-
-    <h2>Client Success Stories</h2>
-    <p>Read about how we’ve helped numerous farms achieve success through our carefully tailored strategies. <a href="#" class="cta">See Our Stories</a>.</p>
-
-    <h2>Contact Us</h2>
-    <p>Have questions or ready to improve your solar farm's performance? Reach out to us today using the form below!</p>
-    <form id="contact" action="#" method="post">
-      <input type="text" name="name" placeholder="Your Name" required><br>
-      <input type="email" name="email" placeholder="Your Email" required><br>
-      <textarea name="message" placeholder="Your Message" required></textarea><br>
-      <button type="submit" class="cta">Send Message</button>
-    </form>
+    <div class="full-width">
+      <h2>Introducing Autonomous Mowers</h2>
+      <p>Our state-of-the-art autonomous mowers ensure precision and efficiency, reducing labor costs and enhancing safety.</p>
+      <a href="#contact" class="cta">Learn More About Our Mowers</a>
+    </div>
+    <div class="full-width">
+      <h2>Contact Us</h2>
+      <p>Ready to improve your solar farm's performance? Reach out to us today!</p>
+      <form id="contact" action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required><br>
+        <input type="email" name="email" placeholder="Your Email" required><br>
+        <textarea name="message" placeholder="Your Message" required></textarea><br>
+        <button type="submit" class="cta">Send Message</button>
+      </form>
+    </div>
   </div>
 
   <footer>
